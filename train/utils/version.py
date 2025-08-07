@@ -13,7 +13,7 @@ def create_latest_model_version() -> str:
     # Extract the version numbers, ignore None matches
     versions = [match.group(1) for match in versions if match]
 
-    # If no versions exist, return "0.0" (first version)
+    # If no versions exist, return "0.1" (first version)
     if not versions:
         return os.path.join(artefacts_dir, "nyc-ridge-0.1.pkl")
 

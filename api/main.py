@@ -11,7 +11,6 @@ load_dotenv(".env.local")
 
 app = FastAPI()
 
-
 @app.get("/")
 def root():
     return {"message": "Hello World"}
